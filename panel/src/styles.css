@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #e2e8f0;
+  background: #0b1019;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+button,
+input,
+textarea {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+::selection {
+  color: white;
+  background: rgb(59 130 246 / 45%);
+}
+
+:root[data-theme="light"] {
+  color: #0f172a;
+  background: #f8fafc;
+  color-scheme: light;
+}
+
+:root[data-theme="light"] body {
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+:root[data-theme="light"] [class~="bg-[#0b1019]"],
+:root[data-theme="light"] [class~="bg-[#0d131e]"] {
+  background-color: #f8fafc !important;
+}
+
+:root[data-theme="light"] [class~="bg-[#0e1521]"],
+:root[data-theme="light"] [class~="bg-[#111a28]"],
+:root[data-theme="light"] [class~="bg-slate-950/70"],
+:root[data-theme="light"] [class~="bg-slate-950/60"],
+:root[data-theme="light"] [class~="bg-slate-950/50"],
+:root[data-theme="light"] [class~="bg-slate-950/40"],
+:root[data-theme="light"] [class~="bg-slate-950/30"] {
+  background-color: #ffffff !important;
+}
+
+:root[data-theme="light"] [class~="bg-slate-900"],
+:root[data-theme="light"] [class~="bg-slate-900/70"],
+:root[data-theme="light"] [class~="bg-slate-900/50"] {
+  background-color: #f1f5f9 !important;
+}
+
+:root[data-theme="light"] [class~="bg-slate-800"],
+:root[data-theme="light"] [class~="bg-slate-800/80"],
+:root[data-theme="light"] [class~="bg-slate-800/70"] {
+  background-color: #e2e8f0 !important;
+}
+
+:root[data-theme="light"] [class~="text-slate-100"],
+:root[data-theme="light"] [class~="text-slate-200"] {
+  color: #0f172a !important;
+}
+
+:root[data-theme="light"] [class~="text-slate-300"] {
+  color: #334155 !important;
+}
+
+:root[data-theme="light"] [class~="text-slate-400"] {
+  color: #475569 !important;
+}
+
+:root[data-theme="light"] [class~="text-slate-500"] {
+  color: #64748b !important;
+}
+
+:root[data-theme="light"] [class~="text-slate-600"] {
+  color: #64748b !important;
+}
+
+:root[data-theme="light"] [class~="text-slate-700"] {
+  color: #475569 !important;
+}
+
+:root[data-theme="light"] [class~="border-slate-800"],
+:root[data-theme="light"] [class~="border-slate-800/80"],
+:root[data-theme="light"] [class~="border-slate-700"],
+:root[data-theme="light"] [class~="border-slate-600"] {
+  border-color: #dbe3ee !important;
+}
+
+:root[data-theme="light"] [class~="hover:bg-slate-800"]:hover,
+:root[data-theme="light"] [class~="hover:bg-slate-800/50"]:hover,
+:root[data-theme="light"] [class~="hover:bg-slate-800/60"]:hover,
+:root[data-theme="light"] [class~="hover:bg-slate-800/70"]:hover {
+  background-color: #e2e8f0 !important;
+}
+
+:root[data-theme="light"] [class~="hover:text-white"]:hover {
+  color: #0f172a !important;
+}
